@@ -1,7 +1,9 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <string>
 using namespace std;
-
+
+
 char* Insert(char* str, const char* substr, const char c1);
 
 
@@ -43,7 +45,7 @@ char* Insert(char* str, const char* substr, const char c1)
 	}
 
 	tmp[n] = '\0';
-	strcpy(str, tmp);
+	strcpy_s(str, 100, tmp);
 	return tmp;
 }
 
